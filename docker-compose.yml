@@ -4,7 +4,7 @@ services:
     container_name: redis
     image: "redis:alpine"
     volumes:
-      - ./redis.conf:/usr/local/etc/redis/redis.conf
+      - ./redis.conf:/path/to/redis.conf
     command: redis-server
     ports:
       - "6379:6379"
